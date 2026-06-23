@@ -1,3 +1,10 @@
+# name: discourse-bekcan-academic-automation
+# about: Automation engine for academic badges
+# version: 0.1
+# authors: Can Bekcan
+# url: https://github.com/canbekcan/discourse-bekcan-academic-automation
+
+
 after_initialize do
   DiscourseEvent.on(:user_updated) do |user|
     # Apply x04d rule: Rigorous attribute delta state checks to break recursive stack overflow cycles
